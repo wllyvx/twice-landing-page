@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
+
+* {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+body,
+html {
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+}
+
+/*hero*/
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./image/twice-hero.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.hero-container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.headline {
+  font-size: 10em;
+  margin: 0%;
+}
+
+.this {
+  font-weight: 300;
+  margin-bottom: 1px;
+}
+
+.visit-web {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 50px;
+  padding: 1em;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.visit-web:hover {
+  animation-name: fade;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  100% {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+  }
+}
+/*end hero*/
+
+/*konten album*/
+
+.konten-album {
+  padding-top: 3em;
+}
+
+.latest {
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: white;
+}
+
+.album-card {
+  margin: 2em;
+  background-color: white;
+  box-shadow: 25px 33px 50px -15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.album-card:hover {
+  animation-name: enlarge;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes enlarge {
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.card-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card-capt {
+  font-size: 1.4em;
+  font-weight: 700;
+  text-align: center;
+  padding: 1em;
+}
+
+/*end konten album*/
+
+/*about*/
+.konten-about {
+  margin-top: 4em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.about-capt {
+  background-color: white;
+  margin: 2em;
+  padding: 2em;
+  text-align: justify;
+  border-radius: 10px;
+  box-shadow: 25px 33px 50px -15px rgba(0, 0, 0, 0.7);
+}
+
+/*end about*/
+
+footer {
+  background-color: lightgray;
+  margin-top: 3em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-style: italic;
+  text-align: center;
+}
